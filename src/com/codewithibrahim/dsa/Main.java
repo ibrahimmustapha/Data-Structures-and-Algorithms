@@ -1,17 +1,15 @@
 package com.codewithibrahim.dsa;
 
 import com.codewithibrahim.dsa.arrays.Array;
+import com.codewithibrahim.dsa.linkedlist.MyLinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Array numbers = new Array(4);
-        numbers.insert(20);
-        numbers.insert(30);
-        numbers.insert(40);
-        numbers.removeAt(0);
-        System.out.println(numbers.indexOf(30));
-        numbers.print();
+        MyLinkedList list = new MyLinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
     }
 }
