@@ -1,5 +1,7 @@
 package com.codewithibrahim.dsa.linkedlist;
 
+import java.util.NoSuchElementException;
+
 public class MyLinkedList {
 
     private class Node {
@@ -14,7 +16,6 @@ public class MyLinkedList {
     private Node first;
     private Node last;
 
-    // addFirst
     public void addLast(int item) {
         Node node = new Node(item);
 
@@ -56,7 +57,31 @@ public class MyLinkedList {
         return indexOf(item) != -1;
     }
 
-    // deleteFirst
-    // deleteLast
-    // indexOf
+    public void removeFirst()  {
+        if(isEmpty()) throw new NoSuchElementException();
+
+        if (first == last) {
+            first = last = null;
+            return;
+        }
+
+        var second = first.next;
+        first.next = null;
+        first = second;
+    }
+
+    public void removeLast() {
+        var previous = getPrevious(last);
+        last = previous;
+        last.next = null;
+    }
+
+    private Node getPrevious(Node node) {
+        var current = first;
+        while (current != null) {
+            if (current.next == node) return current;
+            current = current.next;
+        }
+        return null;
+    }
 }
