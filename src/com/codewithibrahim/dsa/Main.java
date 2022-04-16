@@ -4,20 +4,26 @@ import com.codewithibrahim.dsa.arrays.Array;
 import com.codewithibrahim.dsa.binarysearch.BinarySearch;
 import com.codewithibrahim.dsa.linearsearch.LinearSearch;
 import com.codewithibrahim.dsa.linkedlist.MyLinkedList;
+import com.codewithibrahim.dsa.stack.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        int[] arr = {1, 2, 4, 5, 6, 7, 8};
-        int key = 8;
+        Stack stack = new Stack(5);
+        stack.push(17);
+        stack.push(25);
+        stack.push(9);
+        stack.push(36);
+        stack.push(15);
+        stack.pop();
+        stack.pop();
 
-        LinearSearch search = new LinearSearch();
-        int res = search.linearSearch(arr, key);
+        System.out.println(stack.peek());
 
-        if (res == -1)
-            System.out.println("Target not found");
-        else
-            System.out.println("Target found at index::" + res);
+        while(!stack.isEmpty()) {
+            int data = stack.pop();
+            System.out.println(data);
+        }
     }
 }

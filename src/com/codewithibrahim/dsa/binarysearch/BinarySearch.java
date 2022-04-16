@@ -2,18 +2,18 @@ package com.codewithibrahim.dsa.binarysearch;
 
 public class BinarySearch {
 
-    public int binarySearch(int[] arr, int first, int last, int target) {
-
+    public int binarySearch(int[] arr, int first, int last, int key) {
         if (last >= first) {
             int mid = first + (last - first) / 2;
 
-            if (arr[mid] == target) return mid;
+            if (arr[mid] == key) return mid;
 
-            if (arr[mid] > target)
-                return binarySearch(arr, first, mid -1, target);
+            if (arr[mid] > key)
+                binarySearch(arr, first, mid -1, key);
             else
-                return binarySearch(arr, mid +1, last, target);
+                binarySearch(arr, mid +1, last, key);
         }
+
         return -1;
     }
 }
