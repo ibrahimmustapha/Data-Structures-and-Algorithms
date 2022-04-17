@@ -84,9 +84,4 @@ public class MyLinkedList {
         }
         return null;
     }
-
-    public boolean peeps(String hello) {
-        if (hello == "Help") return true;
-        return false;
-    }
 }

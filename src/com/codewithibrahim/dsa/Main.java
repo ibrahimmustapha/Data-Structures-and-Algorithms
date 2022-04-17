@@ -11,12 +11,11 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Stack stack = new Stack(5);
-        stack.push(17);
-        stack.push(25);
-        stack.push(9);
-        stack.push(36);
-        stack.push(15);
-        stack.pop();
+        stack.push(5);
+        stack.push(4);
+        stack.push(3);
+        stack.push(2);
+        stack.push(1);
         stack.pop();
 
         System.out.println(stack.peek());
