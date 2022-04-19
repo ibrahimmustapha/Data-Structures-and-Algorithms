@@ -28,7 +28,9 @@ operations of a stack:
 Queue is a data structure that uses the FIFO (First in First Out)
 principle to remove and insert new items. Queues are similar to
 Stacks - the difference is stacks uses LIFO while queues uses 
-FIFO principle.These are the basic operations of a queue:
+FIFO principle. There are two ends in a queue thus the 
+front and the rear.
+These are the basic operations of a queue:
 
 1. **Insert / Enqueue** - add item from the rear of the queue.
 2. **Remove / Dequeue** - remove an item from the front of the queue.
