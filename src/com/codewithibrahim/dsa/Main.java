@@ -7,6 +7,8 @@ import com.codewithibrahim.dsa.linkedlist.MyLinkedList;
 import com.codewithibrahim.dsa.queue.Queue;
 import com.codewithibrahim.dsa.stack.Stack;
 
+import java.util.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class Main {
         queue.insert(45);
         queue.insert(34);
 
-        queue.remove();
+//        queue.remove();
         System.out.println(queue.peek());
 
         queue.display();

@@ -40,6 +40,21 @@ An algorithm in simple words is a step-by-step
 solution to a problem. Examples of algorithms include
 Search, Sort etc.
 
+### Binary Tree
+![BinaryTree](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)
+Binary tree is a data structure where data is stored as nodes. These nodes
+can have two children at maximum. These child nodes are often referred to
+as left child and right child.
+
+#### Keywords to Note:
+1. Root
+2. Parent
+3. Child
+4. Leaf
+5. Subtree
+6. Traversing 
+7. Keys
+
 ## Big O Notation
 Big O notation is a way of analyzing the time it takes 
 an algorithm to perform a task as well as the space (memory)
