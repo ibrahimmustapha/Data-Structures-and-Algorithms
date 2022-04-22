@@ -1,27 +1,19 @@
 package com.codewithibrahim.dsa;
 
-import com.codewithibrahim.dsa.arrays.Array;
-import com.codewithibrahim.dsa.binarysearch.BinarySearch;
-import com.codewithibrahim.dsa.linearsearch.LinearSearch;
-import com.codewithibrahim.dsa.linkedlist.MyLinkedList;
-import com.codewithibrahim.dsa.queue.Queue;
-import com.codewithibrahim.dsa.stack.Stack;
-
-import java.util.LinkedList;
+import com.codewithibrahim.dsa.quicksort.QuickSort;
+import com.codewithibrahim.dsa.recursion.Recursion;
 
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
-        Queue queue = new Queue(4);
-        queue.insert(16);
-        queue.insert(12);
-        queue.insert(45);
-        queue.insert(34);
+        Recursion recursion = new Recursion();
 
-//        queue.remove();
-        System.out.println(queue.peek());
+        int[] arr = {1, 5, -23, 11, 3, 10, 17};
+        int fact = recursion.factorial(0);
 
-        queue.display();
+        recursion.displayNumbers(1, 5);
+
+//        System.out.println(fact);
+//        System.out.println(recursion.sum(10, 2));
     }
 }
