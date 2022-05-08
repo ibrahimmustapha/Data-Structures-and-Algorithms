@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.insertionsort;
+package com.codewithibrahim.dsa.sorting;
 
 public class InsertionSort {
 

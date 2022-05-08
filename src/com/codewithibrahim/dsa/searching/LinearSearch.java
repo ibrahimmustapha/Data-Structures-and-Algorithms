@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.linearsearch;
+package com.codewithibrahim.dsa.searching;
 
 public class LinearSearch {
 

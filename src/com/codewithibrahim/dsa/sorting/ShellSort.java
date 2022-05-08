@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.shellsort;
+package com.codewithibrahim.dsa.sorting;
 
 public class ShellSort {
 

@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.bubblesort;
+package com.codewithibrahim.dsa.sorting;
 
 import java.util.Arrays;
 

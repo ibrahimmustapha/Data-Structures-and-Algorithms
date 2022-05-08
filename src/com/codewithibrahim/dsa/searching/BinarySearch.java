@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.binarysearch;
+package com.codewithibrahim.dsa.searching;
 
 public class BinarySearch {
 

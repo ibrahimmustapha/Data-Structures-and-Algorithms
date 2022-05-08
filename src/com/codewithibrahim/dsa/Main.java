@@ -1,14 +1,18 @@
 package com.codewithibrahim.dsa;
 
-import com.codewithibrahim.dsa.shellsort.ShellSort;
+import com.codewithibrahim.dsa.sorting.CountingSort;
 
 public class Main {
 
     public static void main(String[] args){
-        ShellSort sort = new ShellSort();
+        int[] arr = {2, 5, 1, 1, 3};
 
-        int[] nums = {0, 3, -6, -8, 2, 1};
-        sort.shellSort(nums);
-        sort.printArray(nums);
+//        MergeSort.sort(arr, 0, arr.length);
+
+        CountingSort.sort(arr, 1, 5);
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }

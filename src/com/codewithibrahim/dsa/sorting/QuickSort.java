@@ -1,4 +1,4 @@
-package com.codewithibrahim.dsa.quicksort;
+package com.codewithibrahim.dsa.sorting;
 
 import java.util.Arrays;
 
